@@ -1,38 +1,55 @@
-.App {
+* {
+  margin: 0;
+}
+
+.primary__button {
+  background: #FFD814;
+  border: 1px solid;
+  padding: 5px;
+  border-color: #FCD200;
+  box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+  width: auto;
+  border-radius: 20px;
   text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  max-width: 200px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.primary__button:hover {
+  background-color: hsl(50, 100%, 65%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.MuiSnackbar-root {
+  margin-top: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.slick-prev {
+  top: 25% !important;
+  left: 0% !important; 
+  z-index: 10999;
+  color: #232f3e !important;
 }
 
-.App-link {
-  color: #61dafb;
+.slick-next {
+  top: 25% !important;
+  right: 0% !important;
+  z-index: 10999;
+  color: #232f3e !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.slick-next:before,
+.slick-prev:before {
+  display: none;
+}
+
+.previousArrow {
+  color: #232f3e;
+  margin-top: -21px;
+  z-index: 10999;
+  font-size: 100px !important;
+}
+
+.nextArrow {
+  margin-left: -90px;
 }
